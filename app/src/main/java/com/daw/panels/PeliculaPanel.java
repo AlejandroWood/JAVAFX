@@ -121,5 +121,4 @@ public class PeliculaPanel extends GridPane {
         }
         return resultado;
     }
-
 }

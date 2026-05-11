@@ -28,6 +28,11 @@
             <version>3.2.0</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.google.genai</groupId>
+            <artifactId>google-genai</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -37,6 +42,9 @@
                 <version>3.8.0</version>
                 <configuration>
                     <release>11</release>
+                    <compilerArgs>
+                        <arg>-Xlint:-module</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
